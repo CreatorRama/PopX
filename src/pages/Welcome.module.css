@@ -1,0 +1,47 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .subtitle {
+    color: var(--gray);
+    margin-bottom: 32px;
+  }
+  
+  .primaryButton {
+    background-color: var(--purple);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 16px;
+  }
+  
+  .secondaryButton {
+    background-color: var(--light-purple);
+    color: black;
+    border: none;
+    border-radius: 6px;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  

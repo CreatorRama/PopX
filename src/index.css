@@ -1,0 +1,26 @@
+:root {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    
+    --purple: #6c25ff;
+    --light-purple: #bfb1e8;
+    --gray: #919191;
+    --light-gray: #f7f7f7;
+    --dark-gray: #1d1d1d;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    background-color: #fff;
+  }
+  
+  input, button {
+    font-family: inherit;
+  }
