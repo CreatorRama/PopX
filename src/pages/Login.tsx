@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import styles from './Auth.module.css'; 
+import { User } from '../types';
 
 interface LoginForm {
   email: string;
@@ -29,12 +30,11 @@ const Login = ({ setIsLoggedIn }: LoginProps) => {
 
   const onSubmit = (data: LoginForm) => {
     const usersJson = localStorage.getItem('popx-users');
-    let found = false;
     
     if (usersJson) {
       const users = JSON.parse(usersJson);
       
-      const matchedUser = users.find(user => 
+      const matchedUser = users.find((user:User) => 
         user.email === data.email && user.password === data.password
       );
       
