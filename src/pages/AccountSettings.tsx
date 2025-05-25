@@ -46,7 +46,7 @@ interface AccountSettingsProps {
                 <div className={styles.userInfo}>
                     <div className={styles.photoContainer}>
                         <img 
-                            src="src/assets/default-avatar.png" 
+                             src="/images/default-avatar.png"
                             alt={user.fullName} 
                             className={styles.profilePhoto} 
                         />
